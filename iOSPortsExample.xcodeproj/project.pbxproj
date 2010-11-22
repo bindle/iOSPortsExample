@@ -28,8 +28,8 @@
 		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
 		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* iOSPorts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iOSPortsExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsExample_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iOSPorts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSPorts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,6 @@
 			children = (
 				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
 				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
-				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -70,26 +69,27 @@
 			children = (
 				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
 				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
-				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
 			);
 			path = iPad;
 			sourceTree = "<group>";
 		};
-		28EEBF621118D79A00187D67 /* Shared */ = {
+		28EEBF621118D79A00187D67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* iOSPorts-Info.plist */,
+				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
+				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
 			);
-			name = Shared;
+			name = Resources;
+			path = resources;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				2860E32A111B888700E27156 /* iPad */,
-				2860E324111B887F00E27156 /* iPhone */,
-				28EEBF621118D79A00187D67 /* Shared */,
+				A0301F55129B2B0A0022EA2B /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				28EEBF621118D79A00187D67 /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -99,10 +99,11 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* iOSPorts_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* iOSPortsExample_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
+			path = other;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -113,6 +114,16 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0301F55129B2B0A0022EA2B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2860E32A111B888700E27156 /* iPad */,
+				2860E324111B887F00E27156 /* iPhone */,
+			);
+			name = Classes;
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +204,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = iOSPorts_Prefix.pch;
-				INFOPLIST_FILE = "iOSPorts-Info.plist";
+				GCC_PREFIX_HEADER = other/iOSPortsExample_Prefix.pch;
+				INFOPLIST_FILE = "resources/iOSPorts-Info.plist";
 				PRODUCT_NAME = iOSPorts;
 			};
 			name = Debug;
@@ -205,8 +216,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = iOSPorts_Prefix.pch;
-				INFOPLIST_FILE = "iOSPorts-Info.plist";
+				GCC_PREFIX_HEADER = other/iOSPortsExample_Prefix.pch;
+				INFOPLIST_FILE = "resources/iOSPorts-Info.plist";
 				PRODUCT_NAME = iOSPorts;
 				VALIDATE_PRODUCT = YES;
 			};
