@@ -9,6 +9,8 @@
 #import "AppDelegate_iPhone.h"
 #import <iOSPorts/iOSPorts.h>
 
+extern const char iOSPorts_license[];
+
 @implementation AppDelegate_iPhone
 
 @synthesize window;
@@ -27,7 +29,7 @@
    portpkg.name    = @"iOS Ports Example";
    portpkg.version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleVersion"];
    portpkg.website = @"https://github.com/bindle/iOSPortsExample";
-   portpkg.license = @"Public Domain";
+   portpkg.license = [NSString stringWithUTF8String:iOSPorts_license];
 
    portController = [[iOSPortsViewController alloc] init];
    [portController addPackage:portpkg];

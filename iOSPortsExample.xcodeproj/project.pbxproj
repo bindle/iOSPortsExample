@@ -23,6 +23,7 @@
 		A0ABD8D412A4E4D700A879A3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A0ABD8D312A4E4D700A879A3 /* Icon-Small.png */; };
 		A0ABD8D712A4E4FF00A879A3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A0ABD8D612A4E4FF00A879A3 /* Icon-Small-50.png */; };
 		A0ABD8DC12A4E53500A879A3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0ABD8DB12A4E53500A879A3 /* Icon-Small@2x.png */; };
+		A0E41B2312A5B68500B5A8D0 /* license.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E41B2212A5B68500B5A8D0 /* license.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		A0ABD8D312A4E4D700A879A3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		A0ABD8D612A4E4FF00A879A3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		A0ABD8DB12A4E53500A879A3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		A0E41B2212A5B68500B5A8D0 /* license.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = license.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A0E41B2212A5B68500B5A8D0 /* license.m */,
 				32CA4F630368D1EE00C91783 /* iOSPortsExample_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -285,6 +288,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
 				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
+				A0E41B2312A5B68500B5A8D0 /* license.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
