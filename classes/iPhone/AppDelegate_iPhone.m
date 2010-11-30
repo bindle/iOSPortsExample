@@ -36,6 +36,9 @@
    [portController addPackageWithIdentifier:@"cyrus-sasl"];
    [portController addPackageWithIdentifier:@"pcre"];
 
+   // Uncomment to set a custom frame for the PortsPackageView
+   //portController.viewFrame = CGRectMake(0, 0, 320, 480);
+
    [window addSubview:portController.view];
    [window makeKeyAndVisible];
 
