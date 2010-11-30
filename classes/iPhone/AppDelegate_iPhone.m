@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate_iPhone.h"
+#import <iOSPorts/iOSPorts.h>
 
 @implementation AppDelegate_iPhone
 
@@ -16,13 +17,29 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
-    // Override point for customization after application launch.
-    
-    [self.window makeKeyAndVisible];
-    
-    return YES;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+   iOSPortsPackage        * portpkg;
+   iOSPortsViewController * portController;
+
+   // Override point for customization after application launch.
+   portpkg = [[iOSPortsPackage alloc] init];
+   portpkg.name    = @"Super Cool iPhone Package";
+   portpkg.version = @"1.2.3";
+   portpkg.website = @"http://google.com/search?q=SuperCool";
+   portpkg.license = @"Public Domain";
+
+   portController = [[iOSPortsViewController alloc] init];
+   [portController addPackage:portpkg];
+   [portController addPackageWithIdentifier:@"openssl"];
+   [portController addPackageWithIdentifier:@"openldap"];
+   [portController addPackageWithIdentifier:@"cyrus-sasl"];
+   [portController addPackageWithIdentifier:@"pcre"];
+
+   [window addSubview:portController.view];
+   [window makeKeyAndVisible];
+
+   return YES;
 }
 
 

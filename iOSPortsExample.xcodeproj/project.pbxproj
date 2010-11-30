@@ -23,14 +23,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = A0301FC7129B2D130022EA2B /* iOSPorts.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libiOSPorts.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = iOSPorts;
 		};
 		A0301FCE129B2D260022EA2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0301FC7129B2D130022EA2B /* iOSPorts.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* iOSPorts */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = iOSPorts;
 		};
 /* End PBXContainerItemProxy section */
