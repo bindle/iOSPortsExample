@@ -50,6 +50,9 @@
 		32CA4F630368D1EE00C91783 /* iOSPortsExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsExample_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iOSPorts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSPorts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A0301FC7129B2D130022EA2B /* iOSPorts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSPorts.xcodeproj; path = ../iOSPorts/iOSPorts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A0ABD85412A4AD6B00A879A3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A0ABD85512A4AD6B00A879A3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0ABD85C12A4DB4100A879A3 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A0ABD85C12A4DB4100A879A3 /* ChangeLog */,
+				A0ABD85412A4AD6B00A879A3 /* LICENSE */,
+				A0ABD85512A4AD6B00A879A3 /* README */,
 				A0301F55129B2B0A0022EA2B /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				28EEBF621118D79A00187D67 /* Resources */,
