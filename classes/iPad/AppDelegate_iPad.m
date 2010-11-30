@@ -24,9 +24,9 @@
 
    // Override point for customization after application launch.
    portpkg = [[iOSPortsPackage alloc] init];
-   portpkg.name    = @"Super Cool iPad Package";
-   portpkg.version = @"1.2.3";
-   portpkg.website = @"http://google.com/search?q=SuperCool";
+   portpkg.name    = @"iOS Ports Example";
+   portpkg.version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleVersion"];
+   portpkg.website = @"https://github.com/bindle/iOSPortsExample";
    portpkg.license = @"Public Domain";
 
    portController = [[iOSPortsViewController alloc] init];
