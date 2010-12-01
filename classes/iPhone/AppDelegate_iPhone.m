@@ -14,6 +14,7 @@ extern const char iOSPorts_license[];
 @implementation AppDelegate_iPhone
 
 @synthesize window;
+@synthesize portController;
 
 
 #pragma mark -
@@ -22,7 +23,6 @@ extern const char iOSPorts_license[];
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    iOSPortsPackage        * portpkg;
-   iOSPortsViewController * portController;
 
    // Override point for customization after application launch.
    portpkg = [[iOSPortsPackage alloc] init];
@@ -31,7 +31,8 @@ extern const char iOSPorts_license[];
    portpkg.website = @"https://github.com/bindle/iOSPortsExample";
    portpkg.license = [NSString stringWithUTF8String:iOSPorts_license];
 
-   portController = [[iOSPortsViewController alloc] init];
+   self.portController = [[iOSPortsViewController alloc] init];
+   [portController release];
    [portController addPackage:portpkg];
    [portController addPackageWithIdentifier:@"openssl"];
    [portController addPackageWithIdentifier:@"openldap"];
@@ -43,6 +44,9 @@ extern const char iOSPorts_license[];
 
    [window addSubview:portController.view];
    [window makeKeyAndVisible];
+
+   [portpkg release];
+   portpkg = nil;
 
    return YES;
 }

@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate_iPad : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+@class iOSPortsViewController;
+
+@interface AppDelegate_iPad : NSObject <UIApplicationDelegate>
+{
+   UIWindow               * window;
+   iOSPortsViewController * portController;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIWindow      * window;
+@property (nonatomic, retain) iOSPortsViewController * portController;
 
 @end
 
