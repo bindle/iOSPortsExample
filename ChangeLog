@@ -2,7 +2,8 @@
 iOS Ports Example
 Copyright (C) 2010 Bindle Binaries
 
-0.2     2010-12-01
+0.2     2011-05-16
+        - Updating project to Xcode4. (syzdek)
         - Fixing memory leak in example. (syzdek)
 
 0.1	2010-11-30
