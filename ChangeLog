@@ -2,5 +2,8 @@
 iOS Ports Example
 Copyright (C) 2010 Bindle Binaries
 
-0.1	2010/11/30
+0.2     2010-12-01
+        - Fixing memory leak in example. (syzdek)
+
+0.1	2010-11-30
         - Hello World (syzdek)

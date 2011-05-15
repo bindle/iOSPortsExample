@@ -41,6 +41,13 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = iOSPorts;
 		};
+		A037C9A312A5E4B000AAD99A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A037C99E12A5E4B000AAD99A /* iOSPorts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = iOSPorts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +65,7 @@
 		32CA4F630368D1EE00C91783 /* iOSPortsExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsExample_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iOSPorts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSPorts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A0301FC7129B2D130022EA2B /* iOSPorts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSPorts.xcodeproj; path = ../iOSPorts/iOSPorts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A037C99E12A5E4B000AAD99A /* iOSPorts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSPorts.xcodeproj; path = /Users/syzdek/development/com.bindlebinaries/iOSPorts/iOSPorts.xcodeproj; sourceTree = "<absolute>"; };
 		A0ABD85412A4AD6B00A879A3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A0ABD85512A4AD6B00A879A3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A0ABD85C12A4DB4100A879A3 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A037C99E12A5E4B000AAD99A /* iOSPorts.xcodeproj */,
 				A0ABD85C12A4DB4100A879A3 /* ChangeLog */,
 				A0ABD85412A4AD6B00A879A3 /* LICENSE */,
 				A0ABD85512A4AD6B00A879A3 /* README */,
@@ -177,6 +186,14 @@
 			isa = PBXGroup;
 			children = (
 				A0301FCD129B2D130022EA2B /* libiOSPorts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A037C99F12A5E4B000AAD99A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A037C9A412A5E4B000AAD99A /* libiOSPorts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +257,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A037C99F12A5E4B000AAD99A /* Products */;
+					ProjectRef = A037C99E12A5E4B000AAD99A /* iOSPorts.xcodeproj */;
+				},
+				{
 					ProductGroup = A0301FC8129B2D130022EA2B /* Products */;
 					ProjectRef = A0301FC7129B2D130022EA2B /* iOSPorts.xcodeproj */;
 				},
@@ -257,6 +278,13 @@
 			fileType = archive.ar;
 			path = libiOSPorts.a;
 			remoteRef = A0301FCC129B2D130022EA2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A037C9A412A5E4B000AAD99A /* libiOSPorts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiOSPorts.a;
+			remoteRef = A037C9A312A5E4B000AAD99A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -336,7 +364,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../iOSPorts/include;
@@ -353,7 +381,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../iOSPorts/include;
