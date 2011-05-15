@@ -1,8 +1,7 @@
 *.mode1v3
 *.o
 *.pbxuser
-*.xcuserdatad
-*.xcworkspace
+xcuserdata
 .DS_Store
 /build/
 a.out
